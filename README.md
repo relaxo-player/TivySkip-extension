@@ -76,12 +76,37 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 <a id="install"></a>
 
 Direct Install (default):
-- Firefox: [TivySkip_dist-firefox-release.xpi](https://github.com/relaxo-player/TivySkip-extension/releases/download/v1.1.1/TivySkip_dist-firefox-release.xpi)
+- Firefox: [TivySkip_dist-firefox-pre-release.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/v1.1.1/TivySkip_dist-firefox-pre-release.zip)
 - Chrome: [TivySkip_dist-chrome-release.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/v1.1.1/TivySkip_dist-chrome-release.zip)
 
 > Awaiting approval to be installed from the stores: Firefox, Chrome. 
 
 See all the [releases](https://github.com/relaxo-player/TivySkip-extension/releases/latest)
+
+<details closed>
+<summary>Install Pre-release Temporarily</summary>
+  
+1. Add the extension as a temporary addon by navigating to `"about:debugging"`
+2. Click on `"This Firefox"` and `"Load Temporary Add-on..."`
+3. Navigate to the folder where the extension is saved and double click on any file inside of the folder to import the addon
+
+Unfortunately you will have to do this each time you restart firefox
+</details>
+
+<details closed>
+<summary>Install Pre-release Permanently</summary>
+  
+With supported version of firefox nightly or developer, you can install the unsigned pre-release extension permanently by following these steps:
+
+1. Navigate to `"about:config"`
+2. Type `"xpinstall.signatures.required"` into the text field that shows up and set the value to `"false"`
+3. Navigate to `"about:addons"`
+4. Click on the little cog wheel icon and `"Install Addon from file..."`
+5. Select the folder and you are done
+
+This way you will not have to reinstall the extension each time you restart your browser.
+</details>
+
 
 ## Getting started
 <a id="getting-started"></a>
