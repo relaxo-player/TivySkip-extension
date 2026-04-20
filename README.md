@@ -80,7 +80,9 @@ Manual Install (Required):
 - Chrome: [TivySkip_dist-chrome-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1-unsigned/tivyskip-v1-1-1_dist-chrome-unsigned.zip)
 
 Direct Install (Coming Soon):
-> Awaiting approval to be installed from the stores: Firefox, Chrome. 
+> Awaiting approval to be installed from the stores: Firefox, Chrome.
+
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/tivyskip
 
 See all the [releases](https://github.com/relaxo-player/TivySkip-extension/releases/latest)
 
