@@ -3,7 +3,7 @@
 </p>
 <h3 align="center">Adblock Live TV on any page</h3>
 
-TivySkip is a live TV adblocker for web with the ability to fast forward over ads, it also mutes and blocks them from being seen for the duration of the adbreak.
+TivySkip is a Live TV adblocker for web with the ability to fast forward over ads, it also mutes and blocks them from being seen for the duration of the adbreak.
 
 This web extension works best on any page with a `<video/>` tag and in a limited way for embedded `<iframe/>` live videos. Compatible with Chrome and Firefox, tested on Vivaldi, Brave, LibreWolf. 
 
@@ -75,10 +75,11 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 ## Install
 <a id="install"></a>
 
-Direct Install (default):
-- Firefox: [TivySkip_dist-firefox-pre-release.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/v1.1.1/TivySkip_dist-firefox-pre-release.zip)
-- Chrome: [TivySkip_dist-chrome-release.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/v1.1.1/TivySkip_dist-chrome-release.zip)
+Manual Install (Required):
+- Firefox: [TivySkip_dist-firefox-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1-unsigned/tivyskip-v1-1-1_dist-firefox-unsigned.zip)
+- Chrome: [TivySkip_dist-chrome-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1-unsigned/tivyskip-v1-1-1_dist-chrome-unsigned.zip)
 
+Direct Install (Coming Soon):
 > Awaiting approval to be installed from the stores: Firefox, Chrome. 
 
 See all the [releases](https://github.com/relaxo-player/TivySkip-extension/releases/latest)
@@ -112,10 +113,11 @@ This way you will not have to reinstall the extension each time you restart your
 <a id="getting-started"></a>
 
 - Navigate to a page where live broadcast TV is playing in a basic `<video/>`
+  - e.g. https://tvpass.org/channel/bbc-america-east
 - Click on the TivySkip button in the extension toolbar and click Start Adblocking.
 - Notice the video frames being edge traced in the viewbox and see how it automatically detects the broadcast logo of the video and how accurately it redetects each few seconds.
 - Drag the mouse in the viewbox to manually highlight the exact base logo if needed
-- Disable all Ad Skip settings if you just want simple live adblocking with muted blackout overlay
+- Enable all AdSkip settings for best results or none if you just want simple live adblocking with muted blackout overlay
 
 ## Additional notes
 <a id="additional-notes"></a>
