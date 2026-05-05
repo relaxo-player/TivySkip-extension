@@ -21,7 +21,7 @@ For people who watch broadcast IPTV on random websites or from a USB DVB-T dongl
   - [Additional notes](#additional-notes)
   - [How it works](#how-it-works)
   - [FAQ](#faq)
-  - [Release notes](#release-notes)
+  - [Release notes](#release)
   - [How is this better than just muting ads myself?](#sell-me-on-this)
   - [Comparison to Alternative Live TV Adblock Extensions](#comparison)
   - [Sites compatible with TivySkip](#compat)
@@ -68,21 +68,26 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 <!--<img src="./screenshots/A-auto-start" alt="Auto start"/>-->
 ![sleep](screenshots/B-sleep-timer.jpg)
 
+![sleep over](screenshots/B-sleep-over.jpg)
+
 ![settings](screenshots/C-tivy-working-settings.JPG)
+
+![latest setting](screenshots/D-settings.jpg)
 
 </details>
 
 ## Install
 <a id="install"></a>
 
-Manual Install (Required):
-- Firefox: [TivySkip_dist-firefox-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1-unsigned/tivyskip-v1-1-1_dist-firefox-unsigned.zip)
-- Chrome: [TivySkip_dist-chrome-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1-unsigned/tivyskip-v1-1-1_dist-chrome-unsigned.zip)
-
-Direct Install (Coming Soon):
-> Awaiting approval to be installed from the stores: Firefox, Chrome.
+Install Latest Version from store:
 
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/tivyskip
+- Chrome: awaiting account approval, use pre-release install.
+
+Manual Install:
+- Firefox (official signed): [TivySkip_v1-1-1-firefox-signed.xpi](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1/tivyskip-v1-1-1_firefox.xpi)
+- Firefox (pre-release): [TivySkip_v1-1-2-firefox-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-v1-1-2_firefox-unsigned.zip)
+- Chrome (pre-release): [TivySkip_v1-1-2_dist-chrome-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-v1-1-2_dist-chrome-unsigned.zip)
 
 See all the [releases](https://github.com/relaxo-player/TivySkip-extension/releases/latest)
 
@@ -139,7 +144,7 @@ This way you will not have to reinstall the extension each time you restart your
 ## How it works
 <a id="how-it-works"></a>
 
-The extension auto discovers any longstanding broadcast logos in the feed and when it is gone that signals ads are playing and so the tab is muted and a black overlay applied for the duration of the adbreak (or ads are skipped). The logo mask rebuilds each page load, fully automatically, but you can also finely select the exact parts of the logo on screen to watch for using the viewfinder. 
+The extension auto discovers any longstanding broadcast logos in the feed and when it is gone that signals ads are playing and so the tab is muted and a black overlay applied for the duration of the adbreak (or ads are skipped). The logo mask rebuilds each page load, fully automatically, but you can also finely select the exact parts of the logo on screen to watch for using the viewfinder. When the logo is no longer detected that triggers the blackout overlay timer toggle automatically or you can do it sooner by enabling the keyboard shortcut (key A). 
 
 > [!NOTE]
 >
@@ -172,8 +177,14 @@ This way two blocks of content can play back-to-back for better immersion and le
 See https://github.com/relaxoplayer/tivyskip-extension/blob/master/faq.md
 
 ## Release notes
-<a id="release-notes"></a>
+<a id="release"></a>
 
+### 1.1.2
+
+    * More accurate blackout overlay for iframes
+    * Better keyboard shortcuts for manual activation and timer adjustment.
+    * Improvements to auto pause buffer build up timer feature
+    
 ### 1.1.1
 
     * "Mute on fullscreen exit" setting - for manual adblocking when auto is unavailable
