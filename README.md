@@ -214,6 +214,7 @@ https://github.com/jrauser/hush - manual AI training required to tell it what re
 <a id="compat"></a>
 
 - Jellyfin IPTV web player
+- tvpass(dot)org  and [pleyr.net](https://pleyr.net/en/play)
 - Popular iptv streaming players like jplayer etc.
 - pretty much any video library the page uses with or without the timeline available so long as it uses the standard `<video/>` tag and is not inside an `<iFrame/>`
 
