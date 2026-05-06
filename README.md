@@ -48,9 +48,9 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 
 ![Instant Adblock](screenshots/3-ad-detected.jpg)
 
-![waiting](screenshots/4-timer-until.jpg)
-
 ![skipping](screenshots/4-skipper.jpg)
+
+![Advert Detected](screenshots/A-autostart.jpg)
 
 <details closed>
 <summary>More Screenshots</summary>
@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 
 ![latest setting](screenshots/D-settings.jpg)
 
-![Advert Detected](screenshots/A-autostart.jpg)
+
 
 </details>
 
