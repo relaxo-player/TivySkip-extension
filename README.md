@@ -89,7 +89,7 @@ Install Latest Version from store:
 - Chrome: awaiting account approval, use pre-release install.
 
 Manual Install:
-- Firefox (official signed): [TivySkip_v1-1-1-firefox-signed.xpi](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.1/tivyskip-v1-1-1_firefox.xpi)
+- Firefox (official signed): [TivySkip_v1-1-2-firefox-signed.xpi](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-1.1.2.xpi)
 - Firefox (pre-release): [TivySkip_v1-1-2-firefox-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-v1-1-2_firefox-unsigned.zip)
 - Chrome (pre-release): [TivySkip_v1-1-2_chrome-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-v1-1-2_chrome-unsigned.zip)
 
