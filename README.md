@@ -3,7 +3,7 @@
 </p>
 <h3 align="center">Adblock Live TV on any page</h3>
 
-TivySkip is a Live TV adblocker for web with the ability to fast forward over ads, it also mutes and blocks them from being seen for the duration of the adbreak.
+TivySkip is a Live TV adblocker for web with the ability to fast forward over ads, it also mutes the tab and blocks ad visuals from being seen for the duration of the adbreak.
 
 This web extension works best on any page with a `<video/>` tag and in a limited way for embedded `<iframe/>` live videos. Compatible with Chrome and Firefox, tested on Vivaldi, Brave, LibreWolf. 
 
@@ -48,7 +48,9 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 
 ![Instant Adblock](screenshots/3-ad-detected.jpg)
 
-![Advert Detected](screenshots/A-autostart.jpg)
+![waiting](screenshots/4-timer-until.jpg)
+
+![skipping](screenshots/4-skipper.jpg)
 
 <details closed>
 <summary>More Screenshots</summary>
@@ -73,6 +75,8 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 ![settings](screenshots/C-tivy-working-settings.JPG)
 
 ![latest setting](screenshots/D-settings.jpg)
+
+![Advert Detected](screenshots/A-autostart.jpg)
 
 </details>
 
@@ -144,7 +148,7 @@ This way you will not have to reinstall the extension each time you restart your
 ## How it works
 <a id="how-it-works"></a>
 
-The extension auto discovers any longstanding broadcast logos in the feed and when it is gone that signals ads are playing and so the tab is muted and a black overlay applied for the duration of the adbreak (or ads are skipped). The logo mask rebuilds each page load, fully automatically, but you can also finely select the exact parts of the logo on screen to watch for using the viewfinder. When the logo is no longer detected that triggers the blackout overlay timer toggle automatically or you can do it sooner by enabling the keyboard shortcut (key A). 
+The extension auto discovers any longstanding broadcast logos in the feed and when it is gone that signals ads are playing and so the tab is muted and a black overlay applied for the duration of the adbreak (or ads are skipped). The logo mask rebuilds each page load, fully automatically, but you can also finely select the exact parts of the logo on screen to watch for using the viewfinder. When the logo is no longer detected that triggers the blackout overlay timer toggle automatically OR you can engage the timers manually via the keyboard shortcut (key A). 
 
 > [!NOTE]
 >
