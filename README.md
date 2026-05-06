@@ -20,7 +20,6 @@ For people who watch broadcast IPTV on random websites or from a USB DVB-T dongl
   - [Getting started](#getting-started)
   - [Additional notes](#additional-notes)
   - [How it works](#how-it-works)
-  - [FAQ](#faq)
   - [Release notes](#release)
   - [How is this better than just muting ads myself?](#sell-me-on-this)
   - [Comparison to Alternative Live TV Adblock Extensions](#comparison)
@@ -175,11 +174,6 @@ You start watching live TV normally. When ads happen there is no forward buffer 
 
 This way two blocks of content can play back-to-back for better immersion and less cliff hangers. But it always catches up to live eventually. Alternatively you can simply pause for a very long time (15 minutes) to get maximum adskip over an hour but risk losing the cached up content to streaming/buffering/page load issues. 
 
-## FAQ
-<a id="faq"></a>
-
-See https://github.com/relaxoplayer/tivyskip-extension/blob/master/faq.md
-
 ## Release notes
 <a id="release"></a>
 
@@ -222,10 +216,5 @@ https://github.com/jrauser/hush - manual AI training required to tell it what re
 - tvpass(dot)org  and [pleyr.net](https://pleyr.net/en/play)
 - Popular iptv streaming players like jplayer etc.
 - pretty much any video library the page uses with or without the timeline available so long as it uses the standard `<video/>` tag and is not inside an `<iFrame/>`
-
-## Privacy Policy
-<a id="privacy"></a>
-
-See https://github.com/relaxoplayer/tivyskip-extension/blob/master/privacy.md
 
 Suggestions are welcome :)
