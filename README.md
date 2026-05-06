@@ -128,7 +128,7 @@ This way you will not have to reinstall the extension each time you restart your
 - Click on the TivySkip button in the extension toolbar and click Start Adblocking.
 - Notice the video frames being edge traced in the viewbox and see how it automatically detects the broadcast logo of the video and how accurately it redetects each few seconds.
 - Drag the mouse in the viewbox to manually highlight the exact base logo if needed
-- Enable all AdSkip settings for best results or none if you just want simple live adblocking with muted blackout overlay
+- Enable all AdSkip settings for best results (only work well if player has timebar) or none if you just want simple live adblocking with muted blackout overlay
 
 ## Additional notes
 <a id="additional-notes"></a>
@@ -137,7 +137,7 @@ This way you will not have to reinstall the extension each time you restart your
 
 > [!WARNING]
 >
-> Multiple streams cannot be adblocked at the same time yet.
+> Multiple streams cannot be adblocked at the same time yet. Multiple active browser windows may cause issue.
 
 #### Embedded iframe video quirks:
 
@@ -200,8 +200,9 @@ See https://github.com/relaxoplayer/tivyskip-extension/blob/master/faq.md
 ## Can't I Just mute ads and skip around myself?
 <a id="sell-me-on-this"></a>
 
-Sure, though we've automated it into a cohesive extension so no need to focus and work so hard every 8-12 minutes. You can start watching right away and
-regularly ingest 24 minutes of content at once just by waiting occasionally.
+Sure, though we've automated it into a cohesive extension so no need to focus and work so hard every 8-12 minutes. You can start watching right away and regularly ingest 24 minutes of content at once just by waiting occasionally. 
+
+Here's what we've automated for you:
 
 - Muting and unmuting ads - and blacks out the feed during ads, showing estimated time remaining if you wiggle the mouse or tap the overlay
 - Fastforwarding ads or pausing & rewinding a bit - builds up video cache for more immersive viewing without showing advert visuals while in PnP mode
