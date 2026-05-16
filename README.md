@@ -3,13 +3,15 @@
 </p>
 <h3 align="center">Adblock Live TV on any page</h3>
 
-TivySkip is a Live TV adblocker for web with the ability to fast forward over ads, it also mutes the tab and blocks ad visuals from being seen for the duration of the adbreak.
-
-This web extension works best on any page with a `<video/>` tag and in a limited way for embedded `<iframe/>` live videos. Compatible with Chrome and Firefox, tested on Vivaldi, Brave, LibreWolf. 
+TivySkip is a Live TV adblocker with the ability to fast forward over ads, it also mutes the tab and blocks ad visuals from being seen for the duration of the adbreak.
 
 #### Who is this for?
 
-For people who watch broadcast IPTV on random websites or from a USB DVB-T dongle piped to a browser and are tired of having to mute commercials in real-time, regularly forgetting to unmute when ads are over.
+For people who watch broadcast IPTV streams on random websites and are tired of having to mute loud commercials in real-time, regularly forgetting to unmute when ads are over.
+
+> [!NOTE]
+>
+> Requires a video stream with constant static broadcast logo over content
 
 ## Table of Contents
 
@@ -85,14 +87,17 @@ https://github.com/user-attachments/assets/597b0890-1640-48a8-845f-ab834d8ca0cf
 Install Latest Version from store:
 
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/tivyskip
-- Chrome: awaiting approval, use pre-release install.
+- Chrome: https://chromewebstore.google.com/detail/tivyskip/chknkahfgneepfogkdlbpakifoamdknn
+<details closed>
+<summary>Manual Install</summary>
 
-Manual Install:
 - Firefox (official signed): [TivySkip_v1-1-2-firefox-signed.xpi](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-1.1.2.xpi)
 - Firefox (pre-release): [TivySkip_v1-1-2-firefox-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-v1-1-2_firefox-unsigned.zip)
 - Chrome (pre-release): [TivySkip_v1-1-2_chrome-unsigned.zip](https://github.com/relaxo-player/TivySkip-extension/releases/download/1.1.2/tivyskip-v1-1-2_chrome-unsigned.zip)
 
 See all the [releases](https://github.com/relaxo-player/TivySkip-extension/releases/latest)
+
+</details>
 
 <details closed>
 <summary>Install Pre-release Temporarily</summary>
@@ -138,16 +143,31 @@ This way you will not have to reinstall the extension each time you restart your
 >
 > Multiple streams cannot be adblocked at the same time yet. Multiple active browser windows may cause issue.
 
-#### Embedded iframe video quirks:
+#### Embedded iframe video may have issues:
 
-- Adskipping unavailable
-- Don't scroll the page much as the extension is taking screenshots of the visible page to do regular logo matching.
-- Right-click the page to load the target iframe in it's own tab to better detect and manipulate the true `<video/>`
+This extension works best on any page with a  `<video/>` tag and in a limited way for embedded `<iframe/>` live videos. 
+
+- Adskipping unavailable inside iframes, only default blockout available.
+- Try right-click the video to "load just the target iframe" in it's own tab so extension can better detect and manipulate the true `<video/>`
+- if you must use iframe, don't scroll the page away from video playing as the extension is taking screenshots of the visible page to do regular logo matching.
 
 ## How it works
 <a id="how-it-works"></a>
 
-The extension auto discovers any longstanding broadcast logos in the feed and when it is gone that signals ads are playing and so the tab is muted and a black overlay applied for the duration of the adbreak (or ads are skipped). The logo mask rebuilds each page load, fully automatically, but you can also finely select the exact parts of the logo on screen to watch for using the viewfinder. When the logo is no longer detected that triggers the blackout overlay timer toggle automatically OR you can engage the timers manually via the keyboard shortcut (key A). 
+1. The extension auto discovers broadcast logos in the live feed
+2. When the logo disappears for a few seconds we assume ads are playing
+3. The tab is then muted and an interactive blackout overlay applied to the video area for the duration of the adbreak
+4. Ads are skipped along if possible until logo returns and blackout/mute is reversed.
+
+For now the logo mask will auto rebuild on page load which requires about 20 seconds of actual content being played i.e. you should manually block the ad if ad is playing during start of stream (stored logos that solve this are coming soon). 
+
+Once the logo is discovered nicely you can expect total handsfree adblocking.
+
+Some channels with small logos can produce false positive ad detections so you may need to open the extension to finely select the the logo manually at the start, then watch to make sure it is matching well (avg. above 50px). 
+
+Under the hood the extension excels at managing countdown timers that will reverse a major action like mute or blackout, given the current or expected state of an adbreak. You can freely toggle each type of timer inside the dropdown whenever you like. 
+
+There is a sleep timeout, a pause timeout, a mute timeout (for simply muting annoying parts of the show temporarily) and ofcourse adblockout timeout and respite from false positives for good measure. You can engage/toggle the blackout timer button instantly via the on page keyboard shortcut (key A).
 
 > [!NOTE]
 >
@@ -155,7 +175,7 @@ The extension auto discovers any longstanding broadcast logos in the feed and wh
 
 This system is extremely accurate for solid logos and works very well for transparent logos (change sensitivity to low if not working well).
 
-#### How AdSkip Works
+#### How Our AdSkip Works
 
 You start watching live TV normally. When ads happen there is no forward buffer available to skip through so the extension smartly manages this cache for you. 
 
